@@ -31,3 +31,9 @@ target/
 .settings/
 .classpath
 
+# idea metadata
+.idea/
+*.iml
+*.ipr
+*.iws
+
