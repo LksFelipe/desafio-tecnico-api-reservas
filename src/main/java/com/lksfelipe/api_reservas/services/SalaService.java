@@ -1,5 +1,6 @@
 package com.lksfelipe.api_reservas.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,7 @@ public class SalaService {
         this.salaRepository.save(sala);
     }
 
-    public Iterable<Sala> listar() {
+    public List<Sala> listar() {
         return this.salaRepository.findAll();
     }
 
