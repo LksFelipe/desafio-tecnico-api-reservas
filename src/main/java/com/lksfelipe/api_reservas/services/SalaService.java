@@ -26,6 +26,10 @@ public class SalaService {
         return this.salaRepository.findById(id);
     }
 
+    public Optional<Sala> buscarPorNome(String nome) {
+        return this.salaRepository.findByNome(nome);
+    }
+
     public void excluir(Sala sala) {
         this.salaRepository.delete(sala);
     }
